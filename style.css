@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div>p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+button{
+    text-transform: capitalize;
+}
+main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#container{
+    min-height: 400px;
+    min-width: 15.75rem;
+    background-color: aqua;
+    border-radius: 10px;
+    display: grid;
+    padding: 20px 10px;
+    grid-template-rows: 12% auto;
+    gap: 20px;
+    height: 50%;
+    width: 25%;
+}
+
+#container-buttons{
+    display: grid;
+    grid-template-areas:
+    'num7 num8 num9 limpar'
+    'num4 num5 num6 soma'
+    'num1 num2 num3 subtra'
+    'num0 num0 num0 divisao'
+    'parLeft parRight null multi'
+    'pot  pot  pot  igual';
+    gap:10px;
+
+}
+#btn-0{
+    grid-area: num0
+}
+#btn-1{
+    grid-area: num1
+}
+#btn-2{
+    grid-area: num2;
+}
+#btn-3{
+    grid-area: num3
+}
+#btn-4{
+   grid-area: num4
+}
+#btn-5{
+    grid-area: num5
+}
+#btn-6{
+    grid-area: num6
+}
+#btn-7{
+    grid-area: num7
+}
+#btn-8{
+    grid-area: num8
+}
+#btn-9{
+    grid-area: num9
+}
+#soma{
+    grid-area: soma
+}
+#igual{
+    grid-area: igual
+}
+#divisao{
+    grid-area: divisao
+}
+#subtracao{
+    grid-area: subtra
+}
+#multiplicacao{
+    grid-area: multi
+}
+#limpar{
+    grid-area: limpar
+}
+#potenciacao{
+    grid-area: pot
+}
+#resultado{
+    background: rgb(3, 24, 24);
+    color: white;
+    font-size: 18pt;
+    padding: 0px 10px;
+    border-radius: 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
